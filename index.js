@@ -77,7 +77,6 @@ module.exports = function( options, libraries, onComplete ) {
     apiVersion = options.apiVersion || '3.22';
   }
 
-  // TODO: these options / libraries is hacky stuff, refactor all to options hash with defaults
   if (typeof libraries == 'function') {
     onComplete = libraries;
     libraries = [];
